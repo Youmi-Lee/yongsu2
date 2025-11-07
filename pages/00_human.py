@@ -8,8 +8,8 @@ mf_path = "202508_202508_연령별인구현황_월간_남녀구분(1).csv"
 total_path = "202508_202508_연령별인구현황_월간_남녀합계(1).csv"
 
 # ---------------------- CSV 불러오기 ----------------------
-mf_df = pd.read_csv(mf_path, encoding='cp949')
-total_df = pd.read_csv(total_path, encoding='cp949')
+mf_df = pd.read_csv(mf_path, encoding='utf-8')
+total_df = pd.read_csv(total_path, encoding='utf-8')
 
 # ---------------------- 컬럼 정리 ----------------------
 mf_df.columns = mf_df.columns.str.strip()
